@@ -1,0 +1,70 @@
+#
+# Some macro definitions.
+#
+
+OS    = Linux
+
+# Versions
+MAJOR = 6
+MINOR = 4
+MICRO = 0
+JMSUB = 0
+
+# Where the target installation directory is
+prefix = /usr/local
+exec_prefix = ${prefix}
+libdir = ${exec_prefix}/lib
+
+# Install program
+INSTALL = /usr/bin/install -c
+
+# libtool link mode flag
+LIBTOOL_LINK_FLAG = 
+
+JFLAGS = 
+CFLAGS =   -I/usr/local/include
+LDFLAGS =  -L/usr/local/lib -L/usr/local/lib 
+EXTRA_LIBS = 
+SHARED_LDFLAGS = -shared
+
+# The C compiler to use
+CC = gcc
+
+# The Java interpreter to use
+JAVA = /usr/bin/java
+
+# The Java compiler to use.
+JAVAC = /usr/bin/javac
+
+# The Java header file generator.
+JAVAH = /usr/bin/javah
+
+# The Java archive maintainer
+JAR = /usr/bin/jar
+
+# The Javadoc generator.
+JAVADOC = /usr/bin/javadoc
+
+# Where to generate the javadoc
+JAVADOC_DIR = ${prefix}/share/doc/jmagick
+
+# Class path seperator. Platform dependent.
+CLASSSEP = :
+
+# This is the base project directory.
+PROJ_BASE_DIR = $(subst //,/,/home/fangzhou/work/ProjectM/source/JMagick/jmagick-6.4.0/)
+
+# X11 directories
+X11_INCLUDES = 
+X11_LIBS = 
+
+# ImageMagick directories
+MAGICK_INCLUDES = -I/usr/local/include/ImageMagick
+MAGICK_LIBS = -L/usr/local/lib -lMagickWand -lMagickCore
+MAGICK_LIB_PATH = /usr/local/lib
+
+# Java include directories
+JAVA_INCLUDES = -I/usr/lib/jvm/java-1.7.0-openjdk-amd64//include -I/usr/lib/jvm/java-1.7.0-openjdk-amd64//include/linux
+
+#Shared library extension
+SHARED_LIB_EXT = .so
