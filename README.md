@@ -1,1 +1,0 @@
-# JMagick fangzhou version
